@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens que se adaptam</title>
+</head>
+<body>
+  <h1>Imagens dinamicas</h1>  
+  <p>Tente abrir em varios dispositivos diferentes</p>
+  <picture>
+    e muito,importante seguir a ordem do menor ao maior para nao haver erro, ou seja primeiro a imagem menor ate a maior
+    <source media="(max-width:550px )" srcset="cakemenor.png" type="image/png">
+    <img src="cakemaior.png" alt="imagem flexivel">
+  </picture>
+  <h1>Audio</h1>
+  <p>vamo adicionar uns audios ao site</p>
+  <!-- essa aqui e a primeira fora de carregar audio
+  <audio src="umkilo.m4a" controls autoplay></audio>
+  
+  <!-- MP3, wav, ogg....outra forma de adicionar audio ao site e a seguinte-->
+  <audio preload="metadata" controls autoplay>
+    <source src="umkilo.m4a" type="audio/mpeg">
+    <source src="umkilo.m4a" type="audio/ogg">
+    <source src="umkilo.m4a" type="audio/wav">
+    <p>infelizmente o seu navegador na suporta isso. clica no <a href="umkilo.m4a">link para baixar o arquivo</a></p>
+  </audio>
+  <h1>Videos</h1>
+  <!--o site pexels e uma boa para pesquisar videos e imagens sem se preocupar com direitos autorais-->
+
+    <!--essa aqui e a primeir forma de carregar o video--
+    <video src="bolo.mp4" controls></video>
+    <!--outra forma de carregar video esta abaixo, precisamos nos certificar de carregar videos compativeis com todos os navegadore tal como nos audios-->
+
+    <video poster="cakemenor.png" controls loop>
+        <source src="bolo.mp4" type="video/mp4">
+        <source src="bolo.mp4" type="video/m4v">
+        <source src="bolo.mp4" type="video/webm">
+        <source src="bolo.mp4" type="video/ogg">
+
+    </video>
+
+    <h1>inserindo videos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xEtyfjqq8Rg?si=WPBAgtyn_HIQh5-v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </body>
+  </html>
+</body>
+</html
