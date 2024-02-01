@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 3px;
+            background-color: lightgray;
+        }
+        td, th{
+            border: 1px solid black;
+        }
+        thead, tfoot{
+            background-color: gray;
+        }
+        thead>tr>th{
+            position:sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        tbody>tr:nth-child(odd){
+            background-color: lightgray;
+        }
+        td.num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            HEAD
+                TR, TD, TH
+            TOBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>Populaçao dos municipios em Angola</caption>
+        <thead>
+            <tr> 
+                <th scope="col">Posicao</th>
+                <th scope="col">Municipio</th>
+                <th scope="col">Provincia</th>
+                <th scope="col">Populaçao</th>
+        
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td >1</td>
+                <td>Luanda</td>
+                <td>Luanda</td>
+                <td class="num">2 776 125</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Luanda</td>
+                <td>Viana</td>
+                <td class="num">1 838 291</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Cacuaco</td>
+                <td>Luanda</td>
+                <td class="num">1 237 477</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Belas</td>
+                <td>Luanda</td>
+                <td class="num">1 230 101</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Cazenga</td>
+                <td>Luanda</td>
+                <td class="num">1 011 397</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Lubango</td>
+                <td>Huila</td>
+                <td class="num">876 339</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitante</th>
+                <td colspan="2"></td>
+               
+                <td class="num">0000</td>
+            </tr>
+        </tfoot>
+        
+    </table>
+</body>
+</html>
